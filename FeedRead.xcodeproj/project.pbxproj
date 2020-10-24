@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		2697DBE42543B0D200020318 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBE32543B0D200020318 /* ContentView.swift */; };
 		2697DBE62543B0D300020318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2697DBE52543B0D300020318 /* Assets.xcassets */; };
 		2697DBE92543B0D300020318 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2697DBE82543B0D300020318 /* Preview Assets.xcassets */; };
+		2697DBF92543B0E500020318 /* FeedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBF32543B0E500020318 /* FeedList.swift */; };
+		2697DBFA2543B0E500020318 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBF42543B0E500020318 /* Links.swift */; };
+		2697DBFB2543B0E500020318 /* FeedReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBF52543B0E500020318 /* FeedReader.swift */; };
+		2697DBFC2543B0E500020318 /* FeedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBF62543B0E500020318 /* FeedArticle.swift */; };
+		2697DBFD2543B0E500020318 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697DBF72543B0E500020318 /* Feed.swift */; };
+		2697DBFE2543B0E500020318 /* sample_feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 2697DBF82543B0E500020318 /* sample_feed.json */; };
+		2697DC022543B1DE00020318 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2697DC012543B1DE00020318 /* FeedKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,12 @@
 		2697DBE82543B0D300020318 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2697DBEA2543B0D300020318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2697DBEB2543B0D300020318 /* FeedRead.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedRead.entitlements; sourceTree = "<group>"; };
+		2697DBF32543B0E500020318 /* FeedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedList.swift; sourceTree = "<group>"; };
+		2697DBF42543B0E500020318 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		2697DBF52543B0E500020318 /* FeedReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedReader.swift; sourceTree = "<group>"; };
+		2697DBF62543B0E500020318 /* FeedArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticle.swift; sourceTree = "<group>"; };
+		2697DBF72543B0E500020318 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		2697DBF82543B0E500020318 /* sample_feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_feed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2697DC022543B1DE00020318 /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +69,7 @@
 			children = (
 				2697DBE12543B0D200020318 /* FeedReadApp.swift */,
 				2697DBE32543B0D200020318 /* ContentView.swift */,
+				2697DBF22543B0E500020318 /* Models */,
 				2697DBE52543B0D300020318 /* Assets.xcassets */,
 				2697DBEA2543B0D300020318 /* Info.plist */,
 				2697DBEB2543B0D300020318 /* FeedRead.entitlements */,
@@ -69,6 +84,19 @@
 				2697DBE82543B0D300020318 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2697DBF22543B0E500020318 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2697DBF32543B0E500020318 /* FeedList.swift */,
+				2697DBF42543B0E500020318 /* Links.swift */,
+				2697DBF52543B0E500020318 /* FeedReader.swift */,
+				2697DBF62543B0E500020318 /* FeedArticle.swift */,
+				2697DBF72543B0E500020318 /* Feed.swift */,
+				2697DBF82543B0E500020318 /* sample_feed.json */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +115,9 @@
 			dependencies = (
 			);
 			name = FeedRead;
+			packageProductDependencies = (
+				2697DC012543B1DE00020318 /* FeedKit */,
+			);
 			productName = FeedRead;
 			productReference = 2697DBDE2543B0D200020318 /* FeedRead.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 2697DBD52543B0D200020318;
+			packageReferences = (
+				2697DC002543B1DE00020318 /* XCRemoteSwiftPackageReference "FeedKit" */,
+			);
 			productRefGroup = 2697DBDF2543B0D200020318 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2697DBFE2543B0E500020318 /* sample_feed.json in Resources */,
 				2697DBE92543B0D300020318 /* Preview Assets.xcassets in Resources */,
 				2697DBE62543B0D300020318 /* Assets.xcassets in Resources */,
 			);
@@ -140,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2697DBFC2543B0E500020318 /* FeedArticle.swift in Sources */,
 				2697DBE42543B0D200020318 /* ContentView.swift in Sources */,
+				2697DBF92543B0E500020318 /* FeedList.swift in Sources */,
+				2697DBFD2543B0E500020318 /* Feed.swift in Sources */,
 				2697DBE22543B0D200020318 /* FeedReadApp.swift in Sources */,
+				2697DBFA2543B0E500020318 /* Links.swift in Sources */,
+				2697DBFB2543B0E500020318 /* FeedReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2697DC002543B1DE00020318 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2697DC012543B1DE00020318 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2697DC002543B1DE00020318 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2697DBD62543B0D200020318 /* Project object */;
 }
