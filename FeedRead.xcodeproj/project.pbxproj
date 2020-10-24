@@ -90,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				2697DBF32543B0E500020318 /* FeedList.swift */,
-				2697DBF42543B0E500020318 /* Links.swift */,
-				2697DBF52543B0E500020318 /* FeedReader.swift */,
-				2697DBF62543B0E500020318 /* FeedArticle.swift */,
 				2697DBF72543B0E500020318 /* Feed.swift */,
+				2697DBF62543B0E500020318 /* FeedArticle.swift */,
+				2697DBF52543B0E500020318 /* FeedReader.swift */,
+				2697DBF42543B0E500020318 /* Links.swift */,
 				2697DBF82543B0E500020318 /* sample_feed.json */,
 			);
 			path = Models;
